@@ -44,7 +44,6 @@ library
                     Graphics.GPipe.Texture,
                     Graphics.GPipe.Uniform,
                     Graphics.GPipe.Orphans
-  other-modules:
                     Data.SNMap,
                     Graphics.GPipe.Internal.Buffer,
                     Graphics.GPipe.Internal.Compiler,
