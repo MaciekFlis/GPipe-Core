@@ -1,5 +1,5 @@
 flags: {}
 packages:
 - '.'
-resolver: lts-17.4
+resolver: lts-20.2
 system-ghc: true

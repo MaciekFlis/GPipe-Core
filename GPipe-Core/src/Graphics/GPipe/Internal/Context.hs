@@ -1,34 +1,6 @@
 {-# LANGUAGE TypeFamilies, RankNTypes, GeneralizedNewtypeDeriving, FlexibleContexts, FlexibleInstances, GADTs, DeriveDataTypeable #-}
 
-module Graphics.GPipe.Internal.Context
-(
-    ContextHandler(..),
-    ContextT(),
-    GPipeException(..),
-    runContextT,
-    newWindow,
-    deleteWindow,
-    swapWindowBuffers,
-    getFrameBufferSize,
-    withContextWindow,
-    WindowState(..),
-    RenderState(..),
-    liftNonWinContextIO,
-    liftNonWinContextAsyncIO,
-    addContextFinalizer,
-    Window(..),
-    addVAOBufferFinalizer,
-    addFBOTextureFinalizer,
-    getVAO, setVAO,
-    getFBO, setFBO,
-    ContextData,
-    VAOKey(..), FBOKey(..), FBOKeys(..),
-    Render(..), render,
-    registerRenderWriteTexture,
-    getLastRenderWin,
-    asSync
-)
-where
+module Graphics.GPipe.Internal.Context where
 
 import Graphics.GPipe.Internal.Format
 import Control.Monad.Exception (MonadException, Exception, MonadAsyncException,bracket)
