@@ -22,13 +22,13 @@ data-files:     CHANGELOG.md
 library
   hs-source-dirs:   src
   build-depends:    base >= 4.9 && < 5,
-                    transformers >= 0.5.2 && < 0.6,
-                    exception-transformers >= 0.3 && < 0.5,
-                    containers >= 0.5 && < 0.7,
-                    Boolean >= 0.2 && <0.3,
-                    hashtables >= 1.2 && < 1.5,
-                    gl >= 0.8 && <= 1.9,
-                    linear >= 1.18 && < 1.22
+                    transformers >= 0.5.2,
+                    exception-transformers >= 0.3,
+                    containers >= 0.5 ,
+                    Boolean >= 0.2 && < 0.2.4,
+                    hashtables >= 1.2,
+                    gl,
+                    linear >= 1.18
   exposed-modules:
                     Graphics.GPipe,
                     Graphics.GPipe.Buffer,
@@ -47,6 +47,7 @@ library
   other-modules:
                     Data.SNMap,
                     Graphics.GPipe.Internal.Buffer,
+                    Graphics.GPipe.Internal.ListT,
                     Graphics.GPipe.Internal.Compiler,
                     Graphics.GPipe.Internal.Context,
                     Graphics.GPipe.Internal.Expr,

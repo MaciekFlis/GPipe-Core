@@ -34,7 +34,7 @@ import Control.Applicative (Applicative, Alternative, (<|>))
 import Control.Monad.Trans.Class (lift)
 import Data.Maybe (fromJust, isJust, isNothing)
 import Control.Monad (MonadPlus, when)
-import Control.Monad.Trans.List (ListT(..))
+import Graphics.GPipe.Internal.ListT (ListT(..))
 import Data.Monoid (All(..), mempty)
 import Data.Either
 import Control.Monad.Trans.Reader
