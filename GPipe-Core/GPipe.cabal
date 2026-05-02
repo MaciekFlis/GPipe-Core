@@ -25,7 +25,7 @@ library
                     transformers >= 0.5.2,
                     exception-transformers >= 0.3,
                     containers >= 0.5 ,
-                    Boolean >= 0.2 && < 0.2.4,
+                    Boolean >= 0.2 && <= 0.2.4,
                     hashtables >= 1.2,
                     gl,
                     linear
